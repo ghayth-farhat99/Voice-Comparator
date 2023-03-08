@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/home.css') }}">
+    <title>Voice Comparator</title>
+</head>
+<body>
+    <div id="parent">
+    <form action="{{ url_for("gfg")}}" method="POST" id="form" enctype="multipart/form-data">
+        
+            <label>Upload your first Voice:<br />
+               <input type='file' name="audio1" accept="audio/*" placeholder="" class="profile-aud">
+            </label>
+            <br />
+            <label>Upload your second Voice:<br />
+                <input type='file' name="audio2" accept="audio/*" placeholder="" class="profile-aud">
+           </label>
+           <br />
+           <br />
+            <button id="button-start" type="submit">start test</button>
+    </form>
+    
+    </div>
+    <br/>
+    <div>
+        <p id="resultat">This is a probability of {{ variable }} if it is the same speaker.</p>
+    </div>
+</body>
+</html>

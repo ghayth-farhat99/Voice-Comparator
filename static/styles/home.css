@@ -1,0 +1,49 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #000;
+    font-size: 15px;
+    line-height: 20px;
+}
+input[type=file]:focus {
+    border: 3px solid #555;
+}
+#button-start {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 2rem 1.5rem;
+    font: 1rem/1.5 "PT Sans", Arial, sans-serif;
+    color: #5a5a5a;
+  }
+  
+  #parent {
+    display: table;
+    width: 100%;
+ }
+ #form {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+ }
+ #resultat{
+    text-align: center;
+    vertical-align: middle;
+ }
+ 
