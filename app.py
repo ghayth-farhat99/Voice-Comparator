@@ -53,10 +53,7 @@ def gfg():
 
         # Call the model to get the embeddings of shape (1, 512) for each file.
        predict = model.m.predict(pcm)
-       speaker_similarity = batch_cosine_similarity(predict[0:1], predict[1:])
-
-        # Compute the cosine similarity and check that it is higher for the same speaker.
-       same_speaker_similarity = speaker_similarity[0]
+       same_speaker_similarity = batch_cosine_similarity(predict[0:1], predict[1:])
 
        return render_template("home.html", variable = same_speaker_similarity)# SAME SPEAKER [0.81564593]
     return render_template("home.html" , variable= 0)
