@@ -58,4 +58,4 @@ def gfg():
        return render_template("home.html", variable = same_speaker_similarity)# SAME SPEAKER [0.81564593]
     return render_template("home.html" , variable= 0)
 if __name__ == '__main__':
-    app.run(debug=True,port=8000)
+    app.run(debug=False,host="0.0.0.0")
